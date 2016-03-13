@@ -17,10 +17,11 @@ Completed:
 * [] Optional: Supports HTTPS
 * [*] Optional: `-h` argument prints CLI API
 
-Walkthrough Gif:
-[Add walkthrough.gif to the project root]
-
+Walkthrough Gif of required features:
 ![Video Walkthrough](proxy-server-walkthrough.gif)
+
+Walkthrough Gif of optional features (--loglevel, -h):
+![Video Walkthrough](proxy-server-walkthrough-log-help.gif)
 
 ## Starting the Server
 
