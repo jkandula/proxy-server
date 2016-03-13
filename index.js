@@ -2,7 +2,30 @@ var http = require('http')
 var request = require('request')
 var fs = require('fs')
 var path = require('path')
-var argv = require('yargs').argv
+var yargs = require('yargs')
+			.usage('node $0 [options]')
+			.option('p', {
+				alias: 'port',
+				description: 'Specify a forwarding port'
+			})
+			.option('x', {
+				alias: 'host',
+				description: 'Specify a forwarding host'
+			})
+			.option('l', {
+				alias: 'log',
+				description: 'Specify a output log file'
+			})
+			.option('h', {
+				alias: 'help',
+				description: 'Show help'
+			})
+var argv = yargs.argv
+
+if(argv.help) {
+	yargs.showHelp('log')
+	return
+}
 
 var logPath = argv.logfile && path.join(__dirname, argv.logfile)
 // if(logPath) {
