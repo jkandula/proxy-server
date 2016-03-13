@@ -13,7 +13,7 @@ Completed:
 * [*] Required: Client requests and respones are printed to stdout
 * [*] Required: The `--logfile` argument outputs all logs to the file specified instead of stdout
 * [] Optional: The `--exec` argument proxies stdin/stdout to/from the destination program
-* [] Optional: The `--loglevel` argument sets the logging chattiness
+* [*] Optional: The `--loglevel` argument sets the logging chattiness
 * [] Optional: Supports HTTPS
 * [*] Optional: `-h` argument prints CLI API
 
